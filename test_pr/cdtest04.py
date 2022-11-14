@@ -164,34 +164,42 @@ import os,random
 # else:
 #     print(alpa[max_index].upper())
 
-# 문자열을 입력후 특정 알파벳 위치 찾기
+# # 문자열을 입력후 특정 알파벳 위치 찾기
 
-st = None; f_alpa = None; cnt = 0; ch = None; ls = []
-while True:
-    print('1.문자열입력 2.문자입력 3.종료',end=" "); ch = input('>>> ')
+# st = None; f_alpa = None; cnt = 0; ch = None; ls = []
+# while True:
+#     print('1.문자열입력 2.문자입력 3.종료',end=" "); ch = input('>>> ')
 
-    if ch == '1':
-        st = input('문자열 입력 : ')
-        if len(st) == 0:
-            print('문자열을 입력하세요!')
-        continue
-    elif ch == '2':
-        f_alpa = input('찾고자하는 문자 입력 : ')
-        if len(f_alpa) == 0:
-            print('찾고자하는 문자를 입력하세요!')
-            continue
-        cnt = 0
-        while True:
-            cnt = st.find(f'{f_alpa}',cnt)
-            if cnt != -1:
-                print(f'{f_alpa}의 위치는 {cnt}')
-                cnt += 1
-            else:
-                break
-    elif ch == '3':
-        print('종료')
-        break
-    else:
-        print('잘못입력했습니다.')
-        continue
+#     if ch == '1':
+#         st = input('문자열 입력 : ')
+#         if len(st) == 0:
+#             print('문자열을 입력하세요!')
+#         continue
+#     elif ch == '2':
+#         if st != None:
+
+#             if len(st) == 0:
+#                 print('문자열 먼저 입력하세요')
+#                 continue
+
+#             f_alpa = input('찾고자하는 문자 입력 : ')
+#             if len(f_alpa) == 0:
+#                 print('찾고자하는 문자를 입력하세요!')
+#                 continue
+#             cnt = 0
+#             while True:
+#                 cnt = st.find(f'{f_alpa}',cnt)
+#                 if cnt != -1:
+#                     print(f'"{f_alpa}"의 위치는 {cnt}')
+#                     cnt += 1
+#                 else:
+#                     print(f'"{f_alpa}"는 문자열 "{st}"에 존재하지 않습니다.')
+#                     break
+
+#     elif ch == '3':
+#         print('종료')
+#         break
+#     else:
+#         print('잘못입력했습니다.')
+#         continue
 
