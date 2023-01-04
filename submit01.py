@@ -157,3 +157,5 @@
 # a = list(map(lambda x : x.split('.'),day['날짜']))
 # for i in a:
 #     print(f'{i[0]}년 {i[1]}월 {i[2]}일')
+
+# test
